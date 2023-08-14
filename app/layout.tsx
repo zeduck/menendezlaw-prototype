@@ -1,11 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Script from 'next/script';
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import Head from 'next/head';
 // import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -40,21 +39,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}`}
-      />
-
-      <Script id='google-analytics' strategy="lazyOnload"> {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}', {
-          page_path: window.location.pathname,
-          });
-      `}
-      </Script>
-
+      { process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID && 
+        (<GoogleAnalytics MEASUREMENT_ID={process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}/>)}
+      
       <body className={inter.className}>{children}</body>
     </html>
   )
