@@ -39,8 +39,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      { process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID && 
-        (<GoogleAnalytics MEASUREMENT_ID={process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}/>)}
+      { process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID && (<GoogleAnalytics MEASUREMENT_ID={process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID}/>) }
       
       <body className={inter.className}>{children}</body>
     </html>
