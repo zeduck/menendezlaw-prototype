@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 import GoogleAnalytics from './components/GoogleAnalytics';
 
 // Import the functions you need from the SDKs you need
@@ -21,12 +21,12 @@ const firebaseConfig: { [id: string]: string | undefined } = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-const inter = Inter({ subsets: ['latin'] })
+const open_Sans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Menendez Law',
   // description: '',
-}
+};
 
 export default function RootLayout({
   children,
@@ -41,7 +41,7 @@ export default function RootLayout({
     <html lang="en">
       { firebaseConfig.measurementId && (<GoogleAnalytics MEASUREMENT_ID={firebaseConfig.measurementId}/>) }
       
-      <body className={inter.className}>{children}</body>
+      <body className={open_Sans.className}>{children}</body>
     </html>
-  )
-}
+  );
+};
