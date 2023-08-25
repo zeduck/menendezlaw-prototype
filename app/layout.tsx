@@ -2,7 +2,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
 import GoogleAnalytics from './components/GoogleAnalytics';
-import firebaseConfig from './firebase/config';
 import firebase_app from './firebase/config';
 
 const open_Sans = Open_Sans({ subsets: ['latin'] });
