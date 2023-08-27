@@ -15,6 +15,6 @@ const firebaseConfig: { [id: string]: string | undefined } = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-const firebase_app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 
-export default firebase_app;
+export default app;
