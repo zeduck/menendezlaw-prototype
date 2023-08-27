@@ -18,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      { firebase_app && (<GoogleAnalytics/>) }
+      <head>
+        { firebase_app && (<GoogleAnalytics/>) }
+        <link rel="canonical" href="https://www.menendezlaw.ca/" />
+      </head>
       
       <body className={open_Sans.className}>{children}</body>
     </html>
