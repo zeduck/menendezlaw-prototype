@@ -4,7 +4,7 @@ import { Open_Sans } from 'next/font/google';
 import GoogleAnalytics from './components/GoogleAnalytics';
 import firebase_app from './firebase/config';
 
-const open_Sans = Open_Sans({ subsets: ['latin'] });
+const open_Sans = Open_Sans({ weight: '500', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Menendez Law',
