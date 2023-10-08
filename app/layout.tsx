@@ -8,7 +8,7 @@ const open_Sans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Menendez Law',
-  // description: '',
+  description: 'Full service immigration and refugee law firm',
 };
 
 export default function RootLayout({
@@ -17,13 +17,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='scroll-smooth'>
       <head>
         { firebase_app && (<GoogleAnalytics/>) }
         <link rel="canonical" href="https://www.menendezlaw.ca/" />
       </head>
       
-      <body className={open_Sans.className}>{children}</body>
+      <body className={open_Sans.className}>
+        {children}
+      </body>
     </html>
   );
 };
