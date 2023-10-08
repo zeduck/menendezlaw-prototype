@@ -1,7 +1,18 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p> Menendez Law </p>
+    <main className="flex flex-col items-center justify-between h-screen">
+      <div className="">
+        <p> Menendez Law </p>
+      </div>
+
+      <div className="">
+        <p>hi</p>
+      </div>
+
+      <div className="">
+        <p>bye</p>
+      </div>
+
     </main>
   )
 }
