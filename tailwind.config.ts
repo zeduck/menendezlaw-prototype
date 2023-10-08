@@ -13,6 +13,20 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        inContent: {
+          "0%": { opacity: '0' },
+          "100%": { opacity: '1' }
+        },
+        outContent: {
+          "0%": { opacity: '1' },
+          "100%": { opacity: '0' }
+        }
+      }
+    },
+    animation: {
+      inContent: 'inContent 1s ease',
+      outContent: 'outContent 1s ease',
     },
     colors: {
       transparent: 'transparent',

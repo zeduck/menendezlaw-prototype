@@ -1,10 +1,12 @@
 export default function Button({ 
   children, 
+  onClick,
 }: {
   children: React.ReactNode,
+  onClick?: () => void,
 }) {
   return (
-    <button className="bg-primary text-primary-content p-8 m-4 text-xl md:text-2xl flex-1">
+    <button className="bg-primary text-primary-content p-8 m-4 text-xl md:text-2xl flex-1" onClick={onClick}>
       { children }
     </button>
   );
