@@ -41,12 +41,15 @@ export default function Home() {
           <video src="/services.mp4" className="absolute" autoPlay muted ref={services} style={{display: servicesScreen === 1 ? "block": "none"}}></video>
           <video src="/servicesReverse.mp4" className="absolute" autoPlay muted ref={servicesReverse} style={{display: servicesScreen === 0 ? "block": "none"}}></video>
           <div 
-            className={`relative left-36 top-32 z-10 flex flex-col justify-between h-1/2
+            className={`relative left-[10rem] top-32 z-10 h-1/2 w-1/4
             ${firstLoad && "opacity-0"} ${servicesScreen === 1 && "transition-opacity delay-700 duration-700 opacity-100"} ${mainScreen && "transition-opacity duraiton-700 opacity-0"}`}
           >
-            <p>hello</p>
-            <p>hello</p>
-            <p>hello</p>
+            <ul className="list-disc text-3xl">
+              <li className="mb-10">Refugee Claims</li>
+              <li className="mb-10">Visitor Visa Extensions</li>
+              <li className="mb-10">Humanitarian & Compassionate Ground Applications</li>
+            </ul>
+
           </div>
 
         </div>
