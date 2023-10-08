@@ -6,7 +6,7 @@ export default function Button({
   onClick?: () => void,
 }) {
   return (
-    <button className="bg-primary text-primary-content p-8 m-4 text-xl md:text-2xl flex-1" onClick={onClick}>
+    <button className="bg-primary text-primary-content p-8 m-4 text-xl md:text-2xl flex-1 whitespace-nowrap" onClick={onClick}>
       { children }
     </button>
   );
