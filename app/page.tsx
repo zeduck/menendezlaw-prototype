@@ -14,6 +14,8 @@ export default function Home() {
   const locationReverse = useRef<HTMLVideoElement>(null);
   const aboutus = useRef<HTMLVideoElement>(null);
   const aboutusReverse = useRef<HTMLVideoElement>(null);
+  const contact = useRef<HTMLVideoElement>(null);
+  const contactReverse = useRef<HTMLVideoElement>(null);
 
   const [mainScreen, setMainScreen] = useState(true);
   const [mainz, setMainz] = useState(50);
@@ -32,6 +34,11 @@ export default function Home() {
   const [toAboutusOpacity, setToAboutusOpacity] = useState(0);
   const [fromAboutusOpacity, setFromAboutusOpacity] = useState(0);
   const [aboutusDisplay, setAboutusDisplay] = useState("none");
+
+  const [contactScreen, setContactScreen] = useState(-1);
+  const [toContactOpacity, setToContactOpacity] = useState(0);
+  const [fromContactOpacity, setFromContactOpacity] = useState(0);
+  const [contactDisplay, setContactDisplay] = useState("none");
 
   const toServices = () => {
     setMainScreen(false);
@@ -76,6 +83,21 @@ export default function Home() {
     setToAboutusOpacity(0);
     setFromAboutusOpacity(1);
     if (aboutusReverse.current) aboutusReverse.current.play();
+  };
+
+  const toContact = () => {
+    setMainScreen(false);
+    setMainz(-50);
+    setContactScreen(1);
+    setToContactOpacity(1);
+    if (contact.current) contact.current.play();
+  };
+  const fromContact = () => {
+    setMainScreen(true);
+    setContactScreen(0);
+    setToContactOpacity(0);
+    setFromContactOpacity(1);
+    if (contactReverse.current) contactReverse.current.play();
   };
   
   return (
@@ -156,8 +178,12 @@ export default function Home() {
               </div>
 
             </div>
-
           </div>
+
+          {/* CONTACT CONTENT */}
+          <video src="/contact.mp4" className="absolute" muted ref={contact} style={{opacity: toContactOpacity}} onPlay={() => setContactDisplay("block")}></video>
+          <video src="/contactReverse.mp4" className="absolute" muted ref={contactReverse} style={{opacity: fromContactOpacity}} onEnded={() => {setFromContactOpacity(0); setContactDisplay("none"); setMainz(50);}}></video>
+          
         </div>
 
         <div className="m-6 md:m-8 lg:mt-12 lg:mb-8">
@@ -167,7 +193,7 @@ export default function Home() {
             <Button onClick={toServices}> Services </Button>
             <Button onClick={toLocation}> Location </Button>
             <Button onClick={toAboutus}> About Us </Button>
-            <Button> Contact </Button>
+            <Button onClick={toContact}> Contact </Button>
           </div>
 
           {/* SERVICES SCREEN */}
@@ -183,6 +209,11 @@ export default function Home() {
           {/* ABOUT US SCREEN */}
           <div className={`${aboutusScreen === 1 ? "block": "hidden"}`}>
             <BackButton onClick={fromAboutus}> Back </BackButton>
+          </div>
+
+          {/* CONTACT SCREEN */}
+          <div className={`${contactScreen === 1 ? "block": "hidden"}`}>
+            <BackButton onClick={fromContact}> Back </BackButton>
           </div>
 
         </div>

@@ -26,10 +26,12 @@ const config: Config = {
         },
         inMap: {
           "0%": { opacity: '0'},
+          "75%": { opacity: '1'},
           "100%": { opacity: '1'}
         },
         outMap: {
           "0%": { opacity: '1'},
+          "25%": { opacity: '1'},
           "100%": { opacity: '0'}
         }
       }
