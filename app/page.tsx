@@ -103,7 +103,7 @@ export default function Home() {
   
   return (
     <main className="bg-white text-base-100">
-      <div className="flex flex-col items-center justify-start h-screen w-screen m-auto">
+      <div className="flex flex-col items-center justify-start h-auto w-auto m-auto overflow-hidden">
         
         {/* TITLE */}
         <div className="my-6 md:my-12 text-6xl md:text-7xl">
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
 
         {/* CONTENT */}
-        <div className="h-full max-w-screen xl:max-w-[75vw] relative object-contain aspect-[4_/_3]">
+        <div className="h-[740px] max-w-screen relative object-contain aspect-[4_/_3]">
           
           {/* MAIN SCREEN ON FIRST LOAD */}
           <Image src="/officeSimple.jpg" alt="3d model of office" fill ref={main} className="aspect-[4_/_3]" priority style={{zIndex: mainz}}/>
