@@ -113,7 +113,7 @@ export default function Home() {
           
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.0791013428743!2d-75.69703852341675!3d45.42790677107342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce052c0ccce04d%3A0xfcb93cdfcca207c3!2sMenendez%20Law%20Refugee%20and%20Immigration!5e0!3m2!1sen!2sca!4v1694661097560!5m2!1sen!2sca" 
-            className={`absolute w-full h-full z-20 ${locationScreen === 1 && "animate-inContent"} ${locationScreen !== 1 && "animate-outContent"}`}
+            className={`absolute w-full h-full z-20 ${locationScreen === 1 && "animate-inMap"} ${locationScreen !== 1 && "animate-outMap"}`}
             loading="lazy" 
             style={{display: locationDisplay}}
           />
@@ -126,25 +126,32 @@ export default function Home() {
             style={{display: aboutusDisplay}}
           >
             <div className="flex flex-row justify-between h-full w-full">
+              
               <div className="bg-secondary text-secondary-content m-0 p-6 h-full w-[49%]">
                 <p className="text-xl md:text-2xl mb-[5%]">Hours</p>
                 <hr />
-                <div className="flex flex-row text-sm md:text-lg justify-between my-[5%]">
+                <div className="flex flex-row text-sm md:text-lg justify-between my-[6%]">
                   <p>Monday - Friday</p>
                   <p>9 am - 5 pm</p>
                 </div>
                 <hr />
-                <div className="flex flex-row text-sm md:text-lg justify-between my-[5%]">
+                <div className="flex flex-row text-sm md:text-lg justify-between my-[6%]">
                   <p>Sunday - Saturday</p>
                   <p>Closed</p>
                 </div>
                 <hr />
               </div>
 
-              <div className="bg-secondary text-secondary-content m-0 p-6 h-full w-[49%] flex flex-col justify-between text-sm md:text-lg">
-                <div className="flex flex-row">
-                  <MdCheck/>
-                  <p>Language assistance</p>
+              <div className="bg-secondary text-secondary-content m-0 py-6 h-full w-[49%] flex flex-row justify-start text-sm lg:text-lg">
+                <div className="flex flex-col justify-between ml-[10%]">
+                  <MdCheck className="w-[30%] h-[30%]"/>
+                  <MdCheck className="w-[30%] h-[30%]"/>
+                  <MdCheck className="w-[30%] h-[30%]"/>
+                </div>
+                <div className="flex flex-col justify-between">
+                  <p className="mt-[6%]">Language assistance</p>
+                  <p>Wheelchair-accessible parking lot</p>
+                  <p className="mb-[6%]">Washroom</p>
                 </div>
               </div>
 

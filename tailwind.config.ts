@@ -23,12 +23,22 @@ const config: Config = {
           "0%": { opacity: '1'},
           "25%": { opacity: '0'},
           "100%": { opacity: '0'}
+        },
+        inMap: {
+          "0%": { opacity: '0'},
+          "100%": { opacity: '1'}
+        },
+        outMap: {
+          "0%": { opacity: '1'},
+          "100%": { opacity: '0'}
         }
       }
     },
     animation: {
       inContent: 'inContent 1.2s ease-in-out',
       outContent: 'outContent 1.2s ease-in-out',
+      inMap: 'inMap 1.2s ease-in-out',
+      outMap: 'outMap 1.2s ease-in-out',
     },
     colors: {
       transparent: 'transparent',
