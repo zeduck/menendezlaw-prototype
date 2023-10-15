@@ -13,6 +13,7 @@
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.11",
     "autoprefixer": "^10.4.15",
+    "daisyui": "^3.9.2",
     "eslint": "^8.51.0",
     "eslint-config-next": "^13.4.16",
     "firebase": "^10.2.0",

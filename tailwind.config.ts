@@ -69,8 +69,11 @@ const config: Config = {
       "error": "#AB3D30",
       "error-content": "#F3D8D2",
       "white": "#FFFFFF"
-    }
+    },
   },
-  plugins: [],
+  daisyui: {
+    themes: ['business'],
+  },
+  plugins: [require("daisyui")],
 }
 export default config

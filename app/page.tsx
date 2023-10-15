@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import Image from "next/image";
 import BackButton from "./components/BackButton";
 import { MdCheck } from "react-icons/md";
+import Contact from "./components/Contact";
 
 export default function Home() {
   const main = useRef<HTMLImageElement>(null);
@@ -101,7 +102,7 @@ export default function Home() {
   };
   
   return (
-    <main>
+    <main className="bg-white text-base-100">
       <div className="flex flex-col items-center justify-start h-screen w-screen m-auto">
         
         {/* TITLE */}
@@ -184,6 +185,12 @@ export default function Home() {
           <video src="/contact.mp4" className="absolute" muted ref={contact} style={{opacity: toContactOpacity}} onPlay={() => setContactDisplay("block")}></video>
           <video src="/contactReverse.mp4" className="absolute" muted ref={contactReverse} style={{opacity: fromContactOpacity}} onEnded={() => {setFromContactOpacity(0); setContactDisplay("none"); setMainz(50);}}></video>
           
+          <div className={`absolute z-20 top-[15%] left-[10%] w-[80%] ${contactScreen === 1 && "animate-inContent"} ${contactScreen !== 1 && "animate-outContent"}`}
+            style={{display: contactDisplay}}
+          >
+            <Contact/>
+          </div>
+
         </div>
 
         <div className="m-6 md:m-8 lg:mt-12 lg:mb-8">

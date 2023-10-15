@@ -7,9 +7,9 @@ export default function Contact() {
   return (
     <div className="hero-content flex flex-col md:flex-row justify-between items-stretch w-full text-white">
 
-      <div className="hero-content flex-col w-full items-stretch flex-[1] p-0 justify-between">
+      <div className="hero-content flex-col w-full items-stretch flex-[1] p-0 justify-start">
         <div>
-          <h1 className="text-4xl font-bold text-left mb-10"> Contact </h1>
+          <h1 className="text-4xl font-bold text-left mb-[85%]"> Contact </h1>
         </div>
 
         <div className="card w-auto bg-secondary-focus text-secondary-content shadow-xl">
