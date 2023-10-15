@@ -1,0 +1,643 @@
+[debug] [2023-10-15T17:29:20.104Z] ----------------------------------------------------------------------
+[debug] [2023-10-15T17:29:20.106Z] Command:       /home/zeduck/.nvm/versions/node/v20.8.1/bin/node /home/zeduck/.nvm/versions/node/v20.8.1/bin/firebase deploy
+[debug] [2023-10-15T17:29:20.106Z] CLI Version:   12.7.0
+[debug] [2023-10-15T17:29:20.106Z] Platform:      linux
+[debug] [2023-10-15T17:29:20.106Z] Node Version:  v20.8.1
+[debug] [2023-10-15T17:29:20.106Z] Time:          Sun Oct 15 2023 13:29:20 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-10-15T17:29:20.106Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-15T17:29:20.144Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-15T17:29:20.144Z] > authorizing via signed-in user (roysmiley.ca@gmail.com)
+[debug] [2023-10-15T17:29:20.144Z] [iam] checking project menendez-law for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-10-15T17:29:20.145Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions [none]
+[debug] [2023-10-15T17:29:20.145Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:20.145Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-15T17:29:20.409Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions 200
+[debug] [2023-10-15T17:29:20.409Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-15T17:29:20.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law [none]
+[debug] [2023-10-15T17:29:20.755Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law 200
+[debug] [2023-10-15T17:29:20.756Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law {"projectId":"menendez-law","projectNumber":"575895006911","displayName":"menendez-law","name":"projects/menendez-law","resources":{"hostingSite":"menendez-law"},"state":"ACTIVE","etag":"1_b2ae1533-1bc0-4340-8e04-4a056e0b4f51"}
+[debug] [2023-10-15T17:29:21.947Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/menendez-law/sites pageToken=&pageSize=10
+[debug] [2023-10-15T17:29:22.567Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/menendez-law/sites 200
+[debug] [2023-10-15T17:29:22.567Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/menendez-law/sites {"sites":[{"name":"projects/menendez-law/sites/menendez-law","defaultUrl":"https://menendez-law.web.app","appId":"1:575895006911:web:579df64a7029094ffda00a","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-15T17:29:22.568Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:575895006911:web:579df64a7029094ffda00a/config [none]
+[debug] [2023-10-15T17:29:22.939Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:575895006911:web:579df64a7029094ffda00a/config 200
+[debug] [2023-10-15T17:29:22.939Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:575895006911:web:579df64a7029094ffda00a/config {"projectId":"menendez-law","appId":"1:575895006911:web:579df64a7029094ffda00a","storageBucket":"menendez-law.appspot.com","apiKey":"AIzaSyBsXshB1skb_j-soHF05cQhcpTPrZCh1JA","authDomain":"menendez-law.firebaseapp.com","messagingSenderId":"575895006911","measurementId":"G-KBHZSZS3KF"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]    Creating an optimized production build ...
+
+[info] 
+
+[info] ╭── 🌼 daisyUI 3.9.2 https://daisyui.com
+
+[info] │
+
+[info] ├── 1 theme is enabled. How to add more themes:
+│   https://daisyui.com/docs/themes
+│
+╰── ⭐️ Star daisyUI project on GitHub: https://github.com/saadeghi/daisyui
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+
+[info]    Generating static pages (3/5) 
+
+[info]  ✓ Generating static pages (5/5) 
+
+[info]    Finalizing page optimization ...
+   Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    9.03 kB        89.4 kB
+├ ○ /_not-found                          0 B                0 B
+└ ○ /icon.svg                            0 B                0 B
++ First Load JS shared by all            80.4 kB
+  ├ chunks/864-bb51502cb3bf8044.js       27.5 kB
+  ├ chunks/fd9d1056-551319d8fa2c4e1f.js  51 kB
+  ├ chunks/main-app-754ab5a1b3c76ec7.js  234 B
+  └ chunks/webpack-199316ac3caadee0.js   1.73 kB
+
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found
+[info] 
+[debug] [2023-10-15T17:29:40.201Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "site": "menendez-law",
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "app/_not-found"
+      ],
+      "frameworksBackend": {
+        "region": "us-central1"
+      },
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrmenendezlaw",
+            "region": "us-central1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/icon.svg",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, immutable, no-transform, max-age=31536000"
+            },
+            {
+              "key": "content-type",
+              "value": "image/svg+xml"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/icon.svg/layout,_N_T_/icon.svg/route,_N_T_/icon.svg"
+            }
+          ]
+        },
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoibWVuZW5kZXotbGF3IiwiYXBwSWQiOiIxOjU3NTg5NTAwNjkxMTp3ZWI6NTc5ZGY2NGE3MDI5MDk0ZmZkYTAwYSIsInN0b3JhZ2VCdWNrZXQiOiJtZW5lbmRlei1sYXcuYXBwc3BvdC5jb20iLCJhcGlLZXkiOiJBSXphU3lCc1hzaEIxc2tiX2otc29IRjA1Y1FoY3BUUHJaQ2gxSkEiLCJhdXRoRG9tYWluIjoibWVuZW5kZXotbGF3LmZpcmViYXNlYXBwLmNvbSIsIm1lc3NhZ2luZ1NlbmRlcklkIjoiNTc1ODk1MDA2OTExIiwibWVhc3VyZW1lbnRJZCI6IkctS0JIWlNaUzNLRiJ9LCJfYXV0aFRva2VuU3luY1VSTCI6Ii9fX3Nlc3Npb24ifQ; SameSite=Strict; Expires=2025-09-09T04:09:40.201Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase/menendez-law/hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase/menendez-law/functions",
+      "codebase": "firebase-frameworks-menendez-law"
+    }
+  ]
+}
+[debug] [2023-10-15T17:29:40.202Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-15T17:29:40.202Z] > authorizing via signed-in user (roysmiley.ca@gmail.com)
+[debug] [2023-10-15T17:29:40.202Z] [iam] checking project menendez-law for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-10-15T17:29:40.202Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions [none]
+[debug] [2023-10-15T17:29:40.202Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:40.202Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-10-15T17:29:40.329Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions 200
+[debug] [2023-10-15T17:29:40.329Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'menendez-law'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2023-10-15T17:29:40.331Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law [none]
+[debug] [2023-10-15T17:29:40.630Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law 200
+[debug] [2023-10-15T17:29:40.630Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law {"projectId":"menendez-law","projectNumber":"575895006911","displayName":"menendez-law","name":"projects/menendez-law","resources":{"hostingSite":"menendez-law"},"state":"ACTIVE","etag":"1_b2ae1533-1bc0-4340-8e04-4a056e0b4f51"}
+[info] i  functions: preparing codebase firebase-frameworks-menendez-law for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-10-15T17:29:40.632Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-10-15T17:29:40.632Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:40.633Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-10-15T17:29:40.633Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:40.634Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com [none]
+[debug] [2023-10-15T17:29:40.634Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:40.635Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com [none]
+[debug] [2023-10-15T17:29:40.635Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:41.008Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/runtimeconfig.googleapis.com 200
+[debug] [2023-10-15T17:29:41.008Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-10-15T17:29:41.017Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com 200
+[debug] [2023-10-15T17:29:41.018Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com [omitted]
+[warn] ⚠  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2023-10-15T17:29:41.018Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2023-10-15T17:29:41.018Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:41.021Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com 200
+[debug] [2023-10-15T17:29:41.021Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2023-10-15T17:29:41.022Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2023-10-15T17:29:41.022Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:41.023Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudfunctions.googleapis.com 200
+[debug] [2023-10-15T17:29:41.023Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-10-15T17:29:41.715Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com:enable 200
+[debug] [2023-10-15T17:29:41.715Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2023-10-15T17:29:41.790Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com:enable 200
+[debug] [2023-10-15T17:29:41.790Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2023-10-15T17:29:51.721Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com [none]
+[debug] [2023-10-15T17:29:51.722Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:51.791Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com [none]
+[debug] [2023-10-15T17:29:51.791Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:29:52.066Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com 200
+[debug] [2023-10-15T17:29:52.066Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-10-15T17:29:52.126Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com 200
+[debug] [2023-10-15T17:29:52.126Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-10-15T17:29:52.127Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law/adminSdkConfig [none]
+[debug] [2023-10-15T17:29:52.393Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law/adminSdkConfig 200
+[debug] [2023-10-15T17:29:52.393Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law/adminSdkConfig {"projectId":"menendez-law","storageBucket":"menendez-law.appspot.com"}
+[debug] [2023-10-15T17:29:52.394Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/menendez-law/configs [none]
+[debug] [2023-10-15T17:29:52.714Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/menendez-law/configs 200
+[debug] [2023-10-15T17:29:52.715Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/menendez-law/configs {}
+[debug] [2023-10-15T17:29:52.728Z] Validating nodejs source
+[debug] [2023-10-15T17:29:53.053Z] > [functions] package.json contents: {
+  "name": "menendezlaw",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
+    "autoprefixer": "^10.4.15",
+    "daisyui": "^3.9.2",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "^13.4.16",
+    "firebase": "^10.5.0",
+    "firebase-tools": "^12.6.0",
+    "next": "^13.4.16",
+    "postcss": "^8.4.28",
+    "protobufjs": "^7.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "^5.2.2",
+    "uglify-js": "^3.17.4",
+    "firebase-frameworks": "^0.10.4",
+    "firebase-functions": "^4.3.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "20"
+  }
+}
+[debug] [2023-10-15T17:29:53.053Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase firebase-frameworks-menendez-law to determine what to deploy 
+[debug] [2023-10-15T17:29:53.054Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-10-15T17:29:53.056Z] Found firebase-functions binary at '/home/zeduck/projects/webdev/menendezlaw/.firebase/menendez-law/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8532
+
+[debug] [2023-10-15T17:29:53.184Z] Got response from /__/functions.yaml {"endpoints":{"ssrmenendezlaw":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrmenendezlaw"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: preparing .firebase/menendez-law/functions directory for uploading... 
+[info] i  functions: packaged /home/zeduck/projects/webdev/menendezlaw/.firebase/menendez-law/functions (41.19 MB) for uploading 
+[debug] [2023-10-15T17:29:59.750Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/menendez-law/locations/-/functions [none]
+[debug] [2023-10-15T17:30:00.233Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/menendez-law/locations/-/functions 200
+[debug] [2023-10-15T17:30:00.234Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/menendez-law/locations/-/functions {}
+[debug] [2023-10-15T17:30:00.234Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2023-10-15T17:30:00.701Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/-/functions 200
+[debug] [2023-10-15T17:30:00.701Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/-/functions {}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2023-10-15T17:30:00.703Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com [none]
+[debug] [2023-10-15T17:30:00.704Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:00.705Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com [none]
+[debug] [2023-10-15T17:30:00.705Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:00.707Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/pubsub.googleapis.com [none]
+[debug] [2023-10-15T17:30:00.707Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/pubsub.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:00.708Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/storage.googleapis.com [none]
+[debug] [2023-10-15T17:30:00.708Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/storage.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:01.039Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com 200
+[debug] [2023-10-15T17:30:01.039Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API eventarc.googleapis.com. Enabling now... 
+[debug] [2023-10-15T17:30:01.040Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com:enable [none]
+[debug] [2023-10-15T17:30:01.040Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com:enable x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:01.066Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com 200
+[debug] [2023-10-15T17:30:01.066Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com [omitted]
+[warn] ⚠  functions: missing required API run.googleapis.com. Enabling now... 
+[debug] [2023-10-15T17:30:01.066Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com:enable [none]
+[debug] [2023-10-15T17:30:01.066Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com:enable x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:01.071Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/storage.googleapis.com 200
+[debug] [2023-10-15T17:30:01.071Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/storage.googleapis.com [omitted]
+[info] ✔  functions: required API storage.googleapis.com is enabled 
+[debug] [2023-10-15T17:30:01.102Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/pubsub.googleapis.com 200
+[debug] [2023-10-15T17:30:01.102Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/pubsub.googleapis.com [omitted]
+[info] ✔  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2023-10-15T17:30:01.620Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com:enable 200
+[debug] [2023-10-15T17:30:01.621Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com:enable [omitted]
+[debug] [2023-10-15T17:30:01.675Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com:enable 200
+[debug] [2023-10-15T17:30:01.675Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com:enable [omitted]
+[debug] [2023-10-15T17:30:11.625Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com [none]
+[debug] [2023-10-15T17:30:11.625Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:11.676Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com [none]
+[debug] [2023-10-15T17:30:11.676Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:11.965Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com 200
+[debug] [2023-10-15T17:30:11.965Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/eventarc.googleapis.com [omitted]
+[info] ✔  functions: required API eventarc.googleapis.com is enabled 
+[debug] [2023-10-15T17:30:11.976Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com 200
+[debug] [2023-10-15T17:30:11.976Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/menendez-law/services/run.googleapis.com [omitted]
+[info] ✔  functions: required API run.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2023-10-15T17:30:11.978Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/575895006911/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-10-15T17:30:11.978Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/575895006911/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-10-15T17:30:12.640Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/575895006911/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2023-10-15T17:30:12.640Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/575895006911/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-575895006911@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"112044942032977708812"}}
+[debug] [2023-10-15T17:30:12.837Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/575895006911/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2023-10-15T17:30:12.838Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/575895006911/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-575895006911@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"102235426535104052911"}}
+[debug] [2023-10-15T17:30:12.840Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law [none]
+[debug] [2023-10-15T17:30:13.265Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law 200
+[debug] [2023-10-15T17:30:13.265Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law {"projectId":"menendez-law","projectNumber":"575895006911","displayName":"menendez-law","name":"projects/menendez-law","resources":{"hostingSite":"menendez-law"},"state":"ACTIVE","etag":"1_b2ae1533-1bc0-4340-8e04-4a056e0b4f51"}
+[debug] [2023-10-15T17:30:13.267Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/menendez-law/versions [none]
+[debug] [2023-10-15T17:30:13.267Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/menendez-law/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-10-15T17:30:14.466Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/menendez-law/versions 200
+[debug] [2023-10-15T17:30:14.466Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/menendez-law/versions {"name":"projects/575895006911/sites/menendez-law/versions/8fe778b194e078b3","status":"CREATED","config":{},"labels":{"firebase-web-framework":"next_ssr","deployment-tool":"cli-firebase"}}
+[debug] [2023-10-15T17:30:14.467Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2023-10-15T17:30:14.467Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions [none]
+[debug] [2023-10-15T17:30:14.467Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:30:14.467Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-10-15T17:30:14.690Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions 200
+[debug] [2023-10-15T17:30:14.690Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-10-15T17:30:14.690Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2023-10-15T17:30:14.691Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2023-10-15T17:30:15.952Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2023-10-15T17:30:15.952Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-575895006911-us-central1/cfad7895-e3b6-43bf-935b-fc36c98c0acd.zip?GoogleAccessId=service-575895006911@gcf-admin-robot.iam.gserviceaccount.com&Expires=1697392816&Signature=HRnq2Mba7%2BZ3tSwnAdwrtrJVcG10gL0uLG6B0OTPM%2BM8tPQ0p7g8%2BUh%2FfwvqtZDGzZfJUAb5z0QyUeUcwANrRjSNbeOaDhGKHnJox7fHt5zEdipfSTVynrhmu9W4h1Do7K5VzznDW4YfC%2FCoiFiGo6fr0QsaL8z9xn43guGGOxNpns89KcZDxUEN160w92DPSOPgPtlj2lNDHd%2Fl1KyzSJFUJD2fPjoAxV4VbsP4WDe3SjTl6tPwmoR6eud79dYKyTUliQtkay%2BZZ4sVgeK0TnMRTW%2B8IfNRhU%2BY05GBJ6ZdysY7Gu8Oskq%2FEeSh9Dx4n9taWpbeNgYmoE5OKEFdcA%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-575895006911-us-central1","object":"cfad7895-e3b6-43bf-935b-fc36c98c0acd.zip"}}
+[debug] [2023-10-15T17:30:15.954Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-575895006911-us-central1/cfad7895-e3b6-43bf-935b-fc36c98c0acd.zip GoogleAccessId=service-575895006911%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1697392816&Signature=HRnq2Mba7%2BZ3tSwnAdwrtrJVcG10gL0uLG6B0OTPM%2BM8tPQ0p7g8%2BUh%2FfwvqtZDGzZfJUAb5z0QyUeUcwANrRjSNbeOaDhGKHnJox7fHt5zEdipfSTVynrhmu9W4h1Do7K5VzznDW4YfC%2FCoiFiGo6fr0QsaL8z9xn43guGGOxNpns89KcZDxUEN160w92DPSOPgPtlj2lNDHd%2Fl1KyzSJFUJD2fPjoAxV4VbsP4WDe3SjTl6tPwmoR6eud79dYKyTUliQtkay%2BZZ4sVgeK0TnMRTW%2B8IfNRhU%2BY05GBJ6ZdysY7Gu8Oskq%2FEeSh9Dx4n9taWpbeNgYmoE5OKEFdcA%3D%3D
+[debug] [2023-10-15T17:30:15.954Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-575895006911-us-central1/cfad7895-e3b6-43bf-935b-fc36c98c0acd.zip [stream]
+[debug] [2023-10-15T17:30:19.880Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-575895006911-us-central1/cfad7895-e3b6-43bf-935b-fc36c98c0acd.zip 200
+[debug] [2023-10-15T17:30:19.880Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-575895006911-us-central1/cfad7895-e3b6-43bf-935b-fc36c98c0acd.zip [omitted]
+[info] ✔  functions: .firebase/menendez-law/functions folder uploaded successfully 
+[info] i  hosting[menendez-law]: beginning deploy... 
+[info] i  hosting[menendez-law]: found 39 files in .firebase/menendez-law/hosting 
+[debug] [2023-10-15T17:30:19.889Z] [hosting] uploading with 200 concurrency
+[debug] [2023-10-15T17:30:19.890Z] [hosting] hash cache [LmZpcmViYXNlL21lbmVuZGV6LWxhdy9ob3N0aW5n] not populated
+[debug] [2023-10-15T17:30:19.985Z] [hosting] hash cache [LmZpcmViYXNlL21lbmVuZGV6LWxhdy9ob3N0aW5n] stored for 39 files
+[debug] [2023-10-15T17:30:19.986Z] [hosting][hash queue][FINAL] {"max":87,"min":13,"avg":25.74358974358974,"active":0,"complete":39,"success":39,"errored":0,"retried":0,"total":39,"elapsed":90}
+[debug] [2023-10-15T17:30:19.986Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/575895006911/sites/menendez-law/versions/8fe778b194e078b3:populateFiles [none]
+[debug] [2023-10-15T17:30:19.986Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/575895006911/sites/menendez-law/versions/8fe778b194e078b3:populateFiles {"files":{"/icon.svg":"07c48dd9e903e06ed366c4a582b1f7faa6370a41668343d0c76cb4691a1e6774","/404.html":"1411d75cbf55897640ad1f2b5d6f8dab8c24ad2cc811a6210aa07d30e4523aea","/index.html":"74f745b3da3a45fe2f420136609c8f0a74b6390dfe79c7f11d68732e3d719e50","/next.svg":"69fb75aede79b670cc3a774cf34561364d373632c78ed59342781868b751d105","/_next/static/Va-7qIEMhFv4XTRTw9rUq/_buildManifest.js":"194052a61b2b493bec5c9d218dc965a4d5bceedaae426b1731b55091af93f023","/vercel.svg":"56529d5c05555c7bd45b85b6ad14f98f64d975e95b5c7c4f52a4b4cd812e816e","/_next/static/Va-7qIEMhFv4XTRTw9rUq/_ssgManifest.js":"d8d8790f4e673a23bec506f00699bed8a258ac0e4965bb1ca8598172cfc0ec97","/_next/static/chunks/bc9c3264-0b580cbfcd4d4c60.js":"d80f335f90df703c017e19ecb6da8ff648539010b4b1bdf4024c429ef115676b","/_next/static/chunks/main-app-754ab5a1b3c76ec7.js":"383024b05d3aaa909fb29cb50650984b1d25c6bf5be300097c23878b72facada","/_next/static/chunks/603-6fce2efa1f3313e6.js":"2f57c8bbc643059ed6431e2f996d777d1acb5af105901df4f5f082b2c0f736d2","/_next/static/chunks/webpack-199316ac3caadee0.js":"430430272ddfca5ad99482b2f56751bdcfa585d269d54d9d334e7280e3355001","/_next/static/chunks/app/layout-4c33b52c7f562704.js":"3c61aa5ebd65b4ff1fce764ef5399a452e69ff10e620e5426b5817b3f331e3e1","/_next/static/chunks/app/not-found-b2c7cbae2a6e34a1.js":"7cfd675ac94dd58b74b6e8d0e5bd8dbd7897dfd306f9bdf4610aacc4f2d26e84","/_next/static/chunks/app/page-e8825edfca70dd8d.js":"ada4839d0d59a0ccbb83e28539923d3049a41e03b487809a2b0eb056dee6b323","/_next/static/chunks/pages/_app-27277a117f49dcf1.js":"bdcff4aff6bc38a8207c498a4000fbf124041ebc8076b78de9c1c862eb8bfc45","/_next/static/chunks/pages/_error-91a5938854a6f402.js":"17dceb5f5bed5b8b01abe852afb241d0d61a6d981e721abd9a9396d546b8378b","/_next/static/media/0ac3d38485abbd38-s.woff2":"03ef9a36833e160aba5a3dac14a183a9a0fbb7943424b311e05981f54735d2c1","/_next/static/media/4a7e62de0ba73178-s.woff2":"c451b8d3d2a53685f12fd1edd2f63ea178635eaa9eec7c6ebc0a9ab10b2f1665","/_next/static/media/53f211dc72d81e36-s.woff2":"c8706d903ebed0190b16123dd1f54f6bc5c6422ace0698749bc0cf98062cad9d","/_next/static/media/5a47781263b5c3c6-s.woff2":"9eb693c0d64bbe093ffc0f9ce83d5bb2ffb93185bb7794de202b53e83f34ef49","/_next/static/media/8d1f845a8f6e42b5-s.woff2":"be43e88df7a551f86424e6a23292a4add5a28b433bd886af45c0b419c3af82df","/_next/static/css/39a15ac9de63a37b.css":"8e461038103b343f3f02e8a6f57fbcdda451119b010fff740792e5908ddf26fa","/_next/static/media/b99b88ceb56fe617-s.woff2":"3343e72fb7c0562acacce59ea0c8cd0603ff3dfcbb7b78022e277aba95091785","/_next/static/media/9ca22c94a875ac5d-s.p.woff2":"d2c149c07d5c5c847944ffbda47ffc015d1e959712b76745116986a781b571af","/_next/static/media/fc60cf9b09f97ca0-s.woff2":"4f01de4e4fa058e40dc34f71e89d5ba2c30e2d9b90a20745bb9d6c6115330dc8","/_next/static/chunks/864-bb51502cb3bf8044.js":"886bbf19acde5109e6a98c6430f6e1c0f820a13c0a35310be0b8092599d15997","/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js":"b0d8cf9b1839da8490f94674bde697da2ac56d56e4b9d7526764a8e02552b7f5","/location.mp4":"946c02f62ae5c68e8b10a217684bf2f784df30d861cfaa6cb8245facd0fe330b","/_next/static/chunks/main-bac8d76d96b4fd6f.js":"75538586a1916cc80d7a32fb5aa258643c040b6867d9e9b03663629bc1e71cb4","/_next/static/chunks/framework-8883d1e9be70c3da.js":"1ac2eaaef2e6106976d1da60bbb709ffb5a138a0fac7881d28356f79f0aedc51","/_next/static/chunks/fd9d1056-551319d8fa2c4e1f.js":"f4e653b88c9cc5ac3a3cd69ea97b931d97e6185619386a2724b4a9227bf2fd8f","/locationReverse.mp4":"79f581989dd31416444ae74616759ee6528b7404b4411460237768377a66a8bc","/aboutus.mp4":"f1daad97db2b6860969455f8992f9d459fea4edd390003d37283290e44855eaa","/contact.mp4":"227353f73a06d8aee2a0ea4f374793896a65cdbe2acddc489e258e5935654186","/services.mp4":"a48d0e76630cd4959004d1799d73b22dbccc01f8eca8221cca555eb52177f06e","/officeSimple.jpg":"bee5aac2ec6809deb9ad56fdf5fc91287ed2e206d0f033ebe932d0028f8d3a10","/aboutusReverse.mp4":"81a26b643be80af83f86b7a66d5669bffb3ebaee91e5bdcf51d1eba3face1b3a","/servicesReverse.mp4":"d8ebe85805fd7561f76101b1cf658b0b5e6ffcc0ad1abb7a0770e0068b3d8c77","/contactReverse.mp4":"085c8de22a8d2eab128a6b0e9f35936cadf556b2c046427ee44327d72ace9971"}}
+[debug] [2023-10-15T17:30:20.635Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/575895006911/sites/menendez-law/versions/8fe778b194e078b3:populateFiles 200
+[debug] [2023-10-15T17:30:20.635Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/575895006911/sites/menendez-law/versions/8fe778b194e078b3:populateFiles {"uploadRequiredHashes":["9eb693c0d64bbe093ffc0f9ce83d5bb2ffb93185bb7794de202b53e83f34ef49","c451b8d3d2a53685f12fd1edd2f63ea178635eaa9eec7c6ebc0a9ab10b2f1665","430430272ddfca5ad99482b2f56751bdcfa585d269d54d9d334e7280e3355001","383024b05d3aaa909fb29cb50650984b1d25c6bf5be300097c23878b72facada","b0d8cf9b1839da8490f94674bde697da2ac56d56e4b9d7526764a8e02552b7f5","d2c149c07d5c5c847944ffbda47ffc015d1e959712b76745116986a781b571af","3343e72fb7c0562acacce59ea0c8cd0603ff3dfcbb7b78022e277aba95091785","ada4839d0d59a0ccbb83e28539923d3049a41e03b487809a2b0eb056dee6b323","75538586a1916cc80d7a32fb5aa258643c040b6867d9e9b03663629bc1e71cb4","194052a61b2b493bec5c9d218dc965a4d5bceedaae426b1731b55091af93f023","3c61aa5ebd65b4ff1fce764ef5399a452e69ff10e620e5426b5817b3f331e3e1","17dceb5f5bed5b8b01abe852afb241d0d61a6d981e721abd9a9396d546b8378b","f4e653b88c9cc5ac3a3cd69ea97b931d97e6185619386a2724b4a9227bf2fd8f","886bbf19acde5109e6a98c6430f6e1c0f820a13c0a35310be0b8092599d15997","d80f335f90df703c017e19ecb6da8ff648539010b4b1bdf4024c429ef115676b","7cfd675ac94dd58b74b6e8d0e5bd8dbd7897dfd306f9bdf4610aacc4f2d26e84","be43e88df7a551f86424e6a23292a4add5a28b433bd886af45c0b419c3af82df","2f57c8bbc643059ed6431e2f996d777d1acb5af105901df4f5f082b2c0f736d2","bdcff4aff6bc38a8207c498a4000fbf124041ebc8076b78de9c1c862eb8bfc45","74f745b3da3a45fe2f420136609c8f0a74b6390dfe79c7f11d68732e3d719e50","03ef9a36833e160aba5a3dac14a183a9a0fbb7943424b311e05981f54735d2c1","1411d75cbf55897640ad1f2b5d6f8dab8c24ad2cc811a6210aa07d30e4523aea","4f01de4e4fa058e40dc34f71e89d5ba2c30e2d9b90a20745bb9d6c6115330dc8","1ac2eaaef2e6106976d1da60bbb709ffb5a138a0fac7881d28356f79f0aedc51","8e461038103b343f3f02e8a6f57fbcdda451119b010fff740792e5908ddf26fa","c8706d903ebed0190b16123dd1f54f6bc5c6422ace0698749bc0cf98062cad9d"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files"}
+[debug] [2023-10-15T17:30:20.637Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/9eb693c0d64bbe093ffc0f9ce83d5bb2ffb93185bb7794de202b53e83f34ef49 [none]
+[debug] [2023-10-15T17:30:20.637Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/9eb693c0d64bbe093ffc0f9ce83d5bb2ffb93185bb7794de202b53e83f34ef49 [stream]
+[debug] [2023-10-15T17:30:20.638Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c451b8d3d2a53685f12fd1edd2f63ea178635eaa9eec7c6ebc0a9ab10b2f1665 [none]
+[debug] [2023-10-15T17:30:20.638Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c451b8d3d2a53685f12fd1edd2f63ea178635eaa9eec7c6ebc0a9ab10b2f1665 [stream]
+[debug] [2023-10-15T17:30:20.639Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/430430272ddfca5ad99482b2f56751bdcfa585d269d54d9d334e7280e3355001 [none]
+[debug] [2023-10-15T17:30:20.639Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/430430272ddfca5ad99482b2f56751bdcfa585d269d54d9d334e7280e3355001 [stream]
+[debug] [2023-10-15T17:30:20.639Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/383024b05d3aaa909fb29cb50650984b1d25c6bf5be300097c23878b72facada [none]
+[debug] [2023-10-15T17:30:20.639Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/383024b05d3aaa909fb29cb50650984b1d25c6bf5be300097c23878b72facada [stream]
+[debug] [2023-10-15T17:30:20.640Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/b0d8cf9b1839da8490f94674bde697da2ac56d56e4b9d7526764a8e02552b7f5 [none]
+[debug] [2023-10-15T17:30:20.640Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/b0d8cf9b1839da8490f94674bde697da2ac56d56e4b9d7526764a8e02552b7f5 [stream]
+[debug] [2023-10-15T17:30:20.640Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d2c149c07d5c5c847944ffbda47ffc015d1e959712b76745116986a781b571af [none]
+[debug] [2023-10-15T17:30:20.640Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d2c149c07d5c5c847944ffbda47ffc015d1e959712b76745116986a781b571af [stream]
+[debug] [2023-10-15T17:30:20.641Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3343e72fb7c0562acacce59ea0c8cd0603ff3dfcbb7b78022e277aba95091785 [none]
+[debug] [2023-10-15T17:30:20.641Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3343e72fb7c0562acacce59ea0c8cd0603ff3dfcbb7b78022e277aba95091785 [stream]
+[debug] [2023-10-15T17:30:20.641Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/ada4839d0d59a0ccbb83e28539923d3049a41e03b487809a2b0eb056dee6b323 [none]
+[debug] [2023-10-15T17:30:20.641Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/ada4839d0d59a0ccbb83e28539923d3049a41e03b487809a2b0eb056dee6b323 [stream]
+[debug] [2023-10-15T17:30:20.642Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/75538586a1916cc80d7a32fb5aa258643c040b6867d9e9b03663629bc1e71cb4 [none]
+[debug] [2023-10-15T17:30:20.642Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/75538586a1916cc80d7a32fb5aa258643c040b6867d9e9b03663629bc1e71cb4 [stream]
+[debug] [2023-10-15T17:30:20.642Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/194052a61b2b493bec5c9d218dc965a4d5bceedaae426b1731b55091af93f023 [none]
+[debug] [2023-10-15T17:30:20.642Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/194052a61b2b493bec5c9d218dc965a4d5bceedaae426b1731b55091af93f023 [stream]
+[debug] [2023-10-15T17:30:20.642Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3c61aa5ebd65b4ff1fce764ef5399a452e69ff10e620e5426b5817b3f331e3e1 [none]
+[debug] [2023-10-15T17:30:20.642Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3c61aa5ebd65b4ff1fce764ef5399a452e69ff10e620e5426b5817b3f331e3e1 [stream]
+[debug] [2023-10-15T17:30:20.643Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/17dceb5f5bed5b8b01abe852afb241d0d61a6d981e721abd9a9396d546b8378b [none]
+[debug] [2023-10-15T17:30:20.643Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/17dceb5f5bed5b8b01abe852afb241d0d61a6d981e721abd9a9396d546b8378b [stream]
+[debug] [2023-10-15T17:30:20.643Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/f4e653b88c9cc5ac3a3cd69ea97b931d97e6185619386a2724b4a9227bf2fd8f [none]
+[debug] [2023-10-15T17:30:20.643Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/f4e653b88c9cc5ac3a3cd69ea97b931d97e6185619386a2724b4a9227bf2fd8f [stream]
+[debug] [2023-10-15T17:30:20.644Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/886bbf19acde5109e6a98c6430f6e1c0f820a13c0a35310be0b8092599d15997 [none]
+[debug] [2023-10-15T17:30:20.644Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/886bbf19acde5109e6a98c6430f6e1c0f820a13c0a35310be0b8092599d15997 [stream]
+[debug] [2023-10-15T17:30:20.644Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d80f335f90df703c017e19ecb6da8ff648539010b4b1bdf4024c429ef115676b [none]
+[debug] [2023-10-15T17:30:20.645Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d80f335f90df703c017e19ecb6da8ff648539010b4b1bdf4024c429ef115676b [stream]
+[debug] [2023-10-15T17:30:20.645Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/7cfd675ac94dd58b74b6e8d0e5bd8dbd7897dfd306f9bdf4610aacc4f2d26e84 [none]
+[debug] [2023-10-15T17:30:20.645Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/7cfd675ac94dd58b74b6e8d0e5bd8dbd7897dfd306f9bdf4610aacc4f2d26e84 [stream]
+[debug] [2023-10-15T17:30:20.645Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/be43e88df7a551f86424e6a23292a4add5a28b433bd886af45c0b419c3af82df [none]
+[debug] [2023-10-15T17:30:20.645Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/be43e88df7a551f86424e6a23292a4add5a28b433bd886af45c0b419c3af82df [stream]
+[debug] [2023-10-15T17:30:20.646Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/2f57c8bbc643059ed6431e2f996d777d1acb5af105901df4f5f082b2c0f736d2 [none]
+[debug] [2023-10-15T17:30:20.646Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/2f57c8bbc643059ed6431e2f996d777d1acb5af105901df4f5f082b2c0f736d2 [stream]
+[debug] [2023-10-15T17:30:20.646Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/bdcff4aff6bc38a8207c498a4000fbf124041ebc8076b78de9c1c862eb8bfc45 [none]
+[debug] [2023-10-15T17:30:20.646Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/bdcff4aff6bc38a8207c498a4000fbf124041ebc8076b78de9c1c862eb8bfc45 [stream]
+[debug] [2023-10-15T17:30:20.647Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/74f745b3da3a45fe2f420136609c8f0a74b6390dfe79c7f11d68732e3d719e50 [none]
+[debug] [2023-10-15T17:30:20.647Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/74f745b3da3a45fe2f420136609c8f0a74b6390dfe79c7f11d68732e3d719e50 [stream]
+[debug] [2023-10-15T17:30:20.647Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/03ef9a36833e160aba5a3dac14a183a9a0fbb7943424b311e05981f54735d2c1 [none]
+[debug] [2023-10-15T17:30:20.647Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/03ef9a36833e160aba5a3dac14a183a9a0fbb7943424b311e05981f54735d2c1 [stream]
+[debug] [2023-10-15T17:30:20.648Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1411d75cbf55897640ad1f2b5d6f8dab8c24ad2cc811a6210aa07d30e4523aea [none]
+[debug] [2023-10-15T17:30:20.648Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1411d75cbf55897640ad1f2b5d6f8dab8c24ad2cc811a6210aa07d30e4523aea [stream]
+[debug] [2023-10-15T17:30:20.648Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/4f01de4e4fa058e40dc34f71e89d5ba2c30e2d9b90a20745bb9d6c6115330dc8 [none]
+[debug] [2023-10-15T17:30:20.648Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/4f01de4e4fa058e40dc34f71e89d5ba2c30e2d9b90a20745bb9d6c6115330dc8 [stream]
+[debug] [2023-10-15T17:30:20.648Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1ac2eaaef2e6106976d1da60bbb709ffb5a138a0fac7881d28356f79f0aedc51 [none]
+[debug] [2023-10-15T17:30:20.648Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1ac2eaaef2e6106976d1da60bbb709ffb5a138a0fac7881d28356f79f0aedc51 [stream]
+[debug] [2023-10-15T17:30:20.650Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/8e461038103b343f3f02e8a6f57fbcdda451119b010fff740792e5908ddf26fa [none]
+[debug] [2023-10-15T17:30:20.650Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/8e461038103b343f3f02e8a6f57fbcdda451119b010fff740792e5908ddf26fa [stream]
+[debug] [2023-10-15T17:30:20.650Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c8706d903ebed0190b16123dd1f54f6bc5c6422ace0698749bc0cf98062cad9d [none]
+[debug] [2023-10-15T17:30:20.650Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c8706d903ebed0190b16123dd1f54f6bc5c6422ace0698749bc0cf98062cad9d [stream]
+[debug] [2023-10-15T17:30:20.651Z] [hosting][populate queue][FINAL] {"max":653,"min":653,"avg":653,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":667}
+[debug] [2023-10-15T17:30:20.651Z] [hosting] uploads queued: 26
+[debug] [2023-10-15T17:30:21.044Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3343e72fb7c0562acacce59ea0c8cd0603ff3dfcbb7b78022e277aba95091785 200
+[debug] [2023-10-15T17:30:21.044Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3343e72fb7c0562acacce59ea0c8cd0603ff3dfcbb7b78022e277aba95091785 [stream]
+[debug] [2023-10-15T17:30:21.058Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/9eb693c0d64bbe093ffc0f9ce83d5bb2ffb93185bb7794de202b53e83f34ef49 200
+[debug] [2023-10-15T17:30:21.058Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/9eb693c0d64bbe093ffc0f9ce83d5bb2ffb93185bb7794de202b53e83f34ef49 [stream]
+[debug] [2023-10-15T17:30:21.060Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/bdcff4aff6bc38a8207c498a4000fbf124041ebc8076b78de9c1c862eb8bfc45 200
+[debug] [2023-10-15T17:30:21.060Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/bdcff4aff6bc38a8207c498a4000fbf124041ebc8076b78de9c1c862eb8bfc45 [stream]
+[debug] [2023-10-15T17:30:21.061Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c451b8d3d2a53685f12fd1edd2f63ea178635eaa9eec7c6ebc0a9ab10b2f1665 200
+[debug] [2023-10-15T17:30:21.061Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c451b8d3d2a53685f12fd1edd2f63ea178635eaa9eec7c6ebc0a9ab10b2f1665 [stream]
+[debug] [2023-10-15T17:30:21.061Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d2c149c07d5c5c847944ffbda47ffc015d1e959712b76745116986a781b571af 200
+[debug] [2023-10-15T17:30:21.061Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d2c149c07d5c5c847944ffbda47ffc015d1e959712b76745116986a781b571af [stream]
+[debug] [2023-10-15T17:30:21.079Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/17dceb5f5bed5b8b01abe852afb241d0d61a6d981e721abd9a9396d546b8378b 200
+[debug] [2023-10-15T17:30:21.079Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/17dceb5f5bed5b8b01abe852afb241d0d61a6d981e721abd9a9396d546b8378b [stream]
+[debug] [2023-10-15T17:30:21.084Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/194052a61b2b493bec5c9d218dc965a4d5bceedaae426b1731b55091af93f023 200
+[debug] [2023-10-15T17:30:21.084Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/194052a61b2b493bec5c9d218dc965a4d5bceedaae426b1731b55091af93f023 [stream]
+[debug] [2023-10-15T17:30:21.085Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/b0d8cf9b1839da8490f94674bde697da2ac56d56e4b9d7526764a8e02552b7f5 200
+[debug] [2023-10-15T17:30:21.085Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/b0d8cf9b1839da8490f94674bde697da2ac56d56e4b9d7526764a8e02552b7f5 [stream]
+[debug] [2023-10-15T17:30:21.088Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/4f01de4e4fa058e40dc34f71e89d5ba2c30e2d9b90a20745bb9d6c6115330dc8 200
+[debug] [2023-10-15T17:30:21.088Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/4f01de4e4fa058e40dc34f71e89d5ba2c30e2d9b90a20745bb9d6c6115330dc8 [stream]
+[debug] [2023-10-15T17:30:21.089Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/be43e88df7a551f86424e6a23292a4add5a28b433bd886af45c0b419c3af82df 200
+[debug] [2023-10-15T17:30:21.089Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/be43e88df7a551f86424e6a23292a4add5a28b433bd886af45c0b419c3af82df [stream]
+[debug] [2023-10-15T17:30:21.091Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/f4e653b88c9cc5ac3a3cd69ea97b931d97e6185619386a2724b4a9227bf2fd8f 200
+[debug] [2023-10-15T17:30:21.091Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/f4e653b88c9cc5ac3a3cd69ea97b931d97e6185619386a2724b4a9227bf2fd8f [stream]
+[debug] [2023-10-15T17:30:21.101Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1ac2eaaef2e6106976d1da60bbb709ffb5a138a0fac7881d28356f79f0aedc51 200
+[debug] [2023-10-15T17:30:21.101Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1ac2eaaef2e6106976d1da60bbb709ffb5a138a0fac7881d28356f79f0aedc51 [stream]
+[debug] [2023-10-15T17:30:21.102Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c8706d903ebed0190b16123dd1f54f6bc5c6422ace0698749bc0cf98062cad9d 200
+[debug] [2023-10-15T17:30:21.102Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/c8706d903ebed0190b16123dd1f54f6bc5c6422ace0698749bc0cf98062cad9d [stream]
+[debug] [2023-10-15T17:30:21.112Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/03ef9a36833e160aba5a3dac14a183a9a0fbb7943424b311e05981f54735d2c1 200
+[debug] [2023-10-15T17:30:21.112Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/03ef9a36833e160aba5a3dac14a183a9a0fbb7943424b311e05981f54735d2c1 [stream]
+[debug] [2023-10-15T17:30:21.124Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/886bbf19acde5109e6a98c6430f6e1c0f820a13c0a35310be0b8092599d15997 200
+[debug] [2023-10-15T17:30:21.124Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/886bbf19acde5109e6a98c6430f6e1c0f820a13c0a35310be0b8092599d15997 [stream]
+[debug] [2023-10-15T17:30:21.133Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/ada4839d0d59a0ccbb83e28539923d3049a41e03b487809a2b0eb056dee6b323 200
+[debug] [2023-10-15T17:30:21.134Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/ada4839d0d59a0ccbb83e28539923d3049a41e03b487809a2b0eb056dee6b323 [stream]
+[debug] [2023-10-15T17:30:21.141Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/7cfd675ac94dd58b74b6e8d0e5bd8dbd7897dfd306f9bdf4610aacc4f2d26e84 200
+[debug] [2023-10-15T17:30:21.141Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/7cfd675ac94dd58b74b6e8d0e5bd8dbd7897dfd306f9bdf4610aacc4f2d26e84 [stream]
+[debug] [2023-10-15T17:30:21.141Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/430430272ddfca5ad99482b2f56751bdcfa585d269d54d9d334e7280e3355001 200
+[debug] [2023-10-15T17:30:21.141Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/430430272ddfca5ad99482b2f56751bdcfa585d269d54d9d334e7280e3355001 [stream]
+[debug] [2023-10-15T17:30:21.141Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3c61aa5ebd65b4ff1fce764ef5399a452e69ff10e620e5426b5817b3f331e3e1 200
+[debug] [2023-10-15T17:30:21.142Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/3c61aa5ebd65b4ff1fce764ef5399a452e69ff10e620e5426b5817b3f331e3e1 [stream]
+[debug] [2023-10-15T17:30:21.168Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/75538586a1916cc80d7a32fb5aa258643c040b6867d9e9b03663629bc1e71cb4 200
+[debug] [2023-10-15T17:30:21.169Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/75538586a1916cc80d7a32fb5aa258643c040b6867d9e9b03663629bc1e71cb4 [stream]
+[debug] [2023-10-15T17:30:21.254Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/383024b05d3aaa909fb29cb50650984b1d25c6bf5be300097c23878b72facada 200
+[debug] [2023-10-15T17:30:21.254Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/383024b05d3aaa909fb29cb50650984b1d25c6bf5be300097c23878b72facada [stream]
+[debug] [2023-10-15T17:30:21.262Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/8e461038103b343f3f02e8a6f57fbcdda451119b010fff740792e5908ddf26fa 200
+[debug] [2023-10-15T17:30:21.262Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/8e461038103b343f3f02e8a6f57fbcdda451119b010fff740792e5908ddf26fa [stream]
+[debug] [2023-10-15T17:30:21.266Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d80f335f90df703c017e19ecb6da8ff648539010b4b1bdf4024c429ef115676b 200
+[debug] [2023-10-15T17:30:21.267Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/d80f335f90df703c017e19ecb6da8ff648539010b4b1bdf4024c429ef115676b [stream]
+[debug] [2023-10-15T17:30:21.278Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/74f745b3da3a45fe2f420136609c8f0a74b6390dfe79c7f11d68732e3d719e50 200
+[debug] [2023-10-15T17:30:21.278Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/74f745b3da3a45fe2f420136609c8f0a74b6390dfe79c7f11d68732e3d719e50 [stream]
+[debug] [2023-10-15T17:30:21.286Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/2f57c8bbc643059ed6431e2f996d777d1acb5af105901df4f5f082b2c0f736d2 200
+[debug] [2023-10-15T17:30:21.286Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/2f57c8bbc643059ed6431e2f996d777d1acb5af105901df4f5f082b2c0f736d2 [stream]
+[debug] [2023-10-15T17:30:21.305Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1411d75cbf55897640ad1f2b5d6f8dab8c24ad2cc811a6210aa07d30e4523aea 200
+[debug] [2023-10-15T17:30:21.306Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/menendez-law/versions/8fe778b194e078b3/files/1411d75cbf55897640ad1f2b5d6f8dab8c24ad2cc811a6210aa07d30e4523aea [stream]
+[debug] [2023-10-15T17:30:21.306Z] [hosting][upload queue][FINAL] {"max":669,"min":408,"avg":502.96153846153845,"active":0,"complete":26,"success":26,"errored":0,"retried":0,"total":26,"elapsed":671}
+[info] ✔  hosting[menendez-law]: file upload complete 
+[debug] [2023-10-15T17:30:21.306Z] [hosting] deploy completed after 1424ms
+[info] i  functions: creating Node.js 20 (2nd Gen) function firebase-frameworks-menendez-law:ssrmenendezlaw(us-central1)... 
+[debug] [2023-10-15T17:30:21.309Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/us-central1/functions functionId=ssrmenendezlaw
+[debug] [2023-10-15T17:30:21.309Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/us-central1/functions {"name":"projects/menendez-law/locations/us-central1/functions/ssrmenendezlaw","buildConfig":{"runtime":"nodejs20","entryPoint":"ssrmenendezlaw","source":{"storageSource":{"bucket":"gcf-v2-uploads-575895006911-us-central1","object":"cfad7895-e3b6-43bf-935b-fc36c98c0acd.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","__FIREBASE_DEFAULTS__":"{\"config\":{\"projectId\":\"menendez-law\",\"appId\":\"1:575895006911:web:579df64a7029094ffda00a\",\"storageBucket\":\"menendez-law.appspot.com\",\"apiKey\":\"AIzaSyBsXshB1skb_j-soHF05cQhcpTPrZCh1JA\",\"authDomain\":\"menendez-law.firebaseapp.com\",\"messagingSenderId\":\"575895006911\",\"measurementId\":\"G-KBHZSZS3KF\"},\"_authTokenSyncURL\":\"/__session\"}","FIREBASE_CONFIG":"{\"projectId\":\"menendez-law\",\"storageBucket\":\"menendez-law.appspot.com\"}","GCLOUD_PROJECT":"menendez-law","EVENTARC_CLOUD_EVENT_SOURCE":"projects/menendez-law/locations/us-central1/services/ssrmenendezlaw","FUNCTION_TARGET":"ssrmenendezlaw"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-menendez-law","firebase-functions-hash":"e1f458fbcca1e981f5abf20d2cef707047f05d1f"}}
+[debug] [2023-10-15T17:30:22.303Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/us-central1/functions 400
+[debug] [2023-10-15T17:30:22.303Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/menendez-law/locations/us-central1/functions {"error":{"code":400,"message":"Could not create Cloud Run service ssrmenendezlaw. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.","status":"INVALID_ARGUMENT"}}
+[warn] ⚠  functions: Your current project quotas don't allow for the current max instances setting of 100. Either reduce this function's maximum instances, or request a quota increase on the underlying Cloud Run service at https://cloud.google.com/run/quotas. 
+[warn] ⚠  functions: You can adjust the max instances value in your function's runtime options:
+	setGlobalOptions({maxInstances: 10}) 
+[error] Failed to create function projects/menendez-law/locations/us-central1/functions/ssrmenendezlaw
+[debug] [2023-10-15T17:30:22.309Z] Total Function Deployment time: 997
+[debug] [2023-10-15T17:30:22.309Z] 1 Functions Deployed
+[debug] [2023-10-15T17:30:22.309Z] 1 Functions Errored
+[debug] [2023-10-15T17:30:22.309Z] 0 Function Deployments Aborted
+[debug] [2023-10-15T17:30:22.309Z] Average Function Deployment time: 997
+[info] 
+[info] Functions deploy had errors with the following functions:
+	firebase-frameworks-menendez-law:ssrmenendezlaw(us-central1)
+[debug] [2023-10-15T17:30:22.379Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[info] i  functions: cleaning up build files... 
+[debug] [2023-10-15T17:30:22.381Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/menendez-law/locations/us-central1/repositories/gcf-artifacts/packages/ssrmenendezlaw [none]
+[debug] [2023-10-15T17:30:22.382Z] >>> [apiv2][query] GET https://us.gcr.io/v2/menendez-law/gcf/us-central1/tags/list [none]
+[debug] [2023-10-15T17:30:22.701Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/menendez-law/locations/us-central1/repositories/gcf-artifacts/packages/ssrmenendezlaw 404
+[debug] [2023-10-15T17:30:22.701Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/menendez-law/locations/us-central1/repositories/gcf-artifacts/packages/ssrmenendezlaw {"error":{"code":404,"message":"Package \"projects/menendez-law/locations/us-central1/repositories/gcf-artifacts/packages/ssrmenendezlaw\" was not found.","status":"NOT_FOUND"}}
+[debug] [2023-10-15T17:30:23.431Z] <<< [apiv2][status] GET https://us.gcr.io/v2/menendez-law/gcf/us-central1/tags/list 200
+[debug] [2023-10-15T17:30:23.431Z] <<< [apiv2][body] GET https://us.gcr.io/v2/menendez-law/gcf/us-central1/tags/list {"child":[],"manifest":{},"name":"menendez-law/gcf/us-central1","tags":[]}
+[debug] [2023-10-15T17:30:23.431Z] Could not find image for function projects/menendez-law/locations/us-central1/functions/ssrmenendezlaw
+[debug] [2023-10-15T17:30:23.431Z] Functions deploy failed.
+[debug] [2023-10-15T17:30:23.431Z] {
+  "endpoint": {
+    "id": "ssrmenendezlaw",
+    "project": "menendez-law",
+    "region": "us-central1",
+    "entryPoint": "ssrmenendezlaw",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "serviceAccount": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "__FIREBASE_FRAMEWORKS_ENTRY__": "next.js",
+      "__FIREBASE_DEFAULTS__": "{\"config\":{\"projectId\":\"menendez-law\",\"appId\":\"1:575895006911:web:579df64a7029094ffda00a\",\"storageBucket\":\"menendez-law.appspot.com\",\"apiKey\":\"AIzaSyBsXshB1skb_j-soHF05cQhcpTPrZCh1JA\",\"authDomain\":\"menendez-law.firebaseapp.com\",\"messagingSenderId\":\"575895006911\",\"measurementId\":\"G-KBHZSZS3KF\"},\"_authTokenSyncURL\":\"/__session\"}",
+      "FIREBASE_CONFIG": "{\"projectId\":\"menendez-law\",\"storageBucket\":\"menendez-law.appspot.com\"}",
+      "GCLOUD_PROJECT": "menendez-law",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/menendez-law/locations/us-central1/services/ssrmenendezlaw"
+    },
+    "codebase": "firebase-frameworks-menendez-law",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "e1f458fbcca1e981f5abf20d2cef707047f05d1f"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/menendez-law/locations/us-central1/functions/ssrmenendezlaw"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/menendez-law/locations/us-central1/functions/ssrmenendezlaw",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Could not create Cloud Run service ssrmenendezlaw. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+            "status": "INVALID_ARGUMENT"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "HTTP Error: 400, Could not create Cloud Run service ssrmenendezlaw. spec.template.spec.containers.resources.limits.cpu: Invalid value specified for cpu. For the specified value, maxScale may not exceed 10.\nConsider running your workload in a region with greater capacity, decreasing your requested cpu-per-instance, or requesting an increase in quota for this region if you are seeing sustained usage near this limit, see https://cloud.google.com/run/quotas. Your project may gain access to further scaling by adding billing information to your account.",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2023-10-15T17:30:23.463Z] Error: Failed to create function ssrmenendezlaw in region us-central1
+    at /home/zeduck/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:291:27
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.createV2Function (/home/zeduck/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:277:30)
+    at async Fabricator.createEndpoint (/home/zeduck/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:136:13)
+    at async handle (/home/zeduck/.nvm/versions/node/v20.8.1/lib/node_modules/firebase-tools/lib/deploy/functions/release/fabricator.js:88:17)
+[error] 
+[error] Error: There was an error deploying functions
+[debug] [2023-10-15T17:38:22.762Z] ----------------------------------------------------------------------
+[debug] [2023-10-15T17:38:22.763Z] Command:       /home/zeduck/.nvm/versions/node/v20.8.1/bin/node /home/zeduck/.nvm/versions/node/v20.8.1/bin/firebase deploy
+[debug] [2023-10-15T17:38:22.763Z] CLI Version:   12.7.0
+[debug] [2023-10-15T17:38:22.763Z] Platform:      linux
+[debug] [2023-10-15T17:38:22.763Z] Node Version:  v20.8.1
+[debug] [2023-10-15T17:38:22.763Z] Time:          Sun Oct 15 2023 13:38:22 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-10-15T17:38:22.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-15T17:38:22.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-15T17:38:22.812Z] > authorizing via signed-in user (roysmiley.ca@gmail.com)
+[debug] [2023-10-15T17:38:22.812Z] [iam] checking project menendez-law for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-10-15T17:38:22.813Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions [none]
+[debug] [2023-10-15T17:38:22.813Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions x-goog-quota-user=projects/menendez-law
+[debug] [2023-10-15T17:38:22.813Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-15T17:38:23.121Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions 200
+[debug] [2023-10-15T17:38:23.121Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menendez-law:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-15T17:38:23.122Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law [none]
+[debug] [2023-10-15T17:38:23.393Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law 200
+[debug] [2023-10-15T17:38:23.394Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/menendez-law {"projectId":"menendez-law","projectNumber":"575895006911","displayName":"menendez-law","name":"projects/menendez-law","resources":{"hostingSite":"menendez-law"},"state":"ACTIVE","etag":"1_7b4518ca-6cf4-4082-9b0b-ad16db018ae0"}
+[debug] [2023-10-15T17:38:24.516Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/menendez-law/sites pageToken=&pageSize=10
+[debug] [2023-10-15T17:38:24.872Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/menendez-law/sites 200
+[debug] [2023-10-15T17:38:24.872Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/menendez-law/sites {"sites":[{"name":"projects/menendez-law/sites/menendez-law","defaultUrl":"https://menendez-law.web.app","appId":"1:575895006911:web:579df64a7029094ffda00a","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-15T17:38:24.872Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:575895006911:web:579df64a7029094ffda00a/config [none]
+[debug] [2023-10-15T17:38:25.232Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:575895006911:web:579df64a7029094ffda00a/config 200
+[debug] [2023-10-15T17:38:25.232Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:575895006911:web:579df64a7029094ffda00a/config {"projectId":"menendez-law","appId":"1:575895006911:web:579df64a7029094ffda00a","storageBucket":"menendez-law.appspot.com","apiKey":"AIzaSyBsXshB1skb_j-soHF05cQhcpTPrZCh1JA","authDomain":"menendez-law.firebaseapp.com","messagingSenderId":"575895006911","measurementId":"G-KBHZSZS3KF"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info]    Creating an optimized production build ...
+
+[info] 
+
+[info] ╭── 🌼 daisyUI 3.9.2 https://daisyui.com
+
+[info] │
+├── 1 theme is enabled. How to add more themes:
+│   https://daisyui.com/docs/themes
+│
+╰── 💚 Support daisyUI project: https://opencollective.com/daisyui
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info]    Generating static pages (1/5) 
+
+[info]    Generating static pages (2/5) 
+
+[info]    Generating static pages (3/5) 
+ ✓ Generating static pages (5/5) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    9.03 kB        89.4 kB
+├ ○ /_not-found                          0 B                0 B
+└ ○ /icon.svg                            0 B                0 B
++ First Load JS shared by all            80.4 kB
+  ├ chunks/864-bb51502cb3bf8044.js       27.5 kB
+  ├ chunks/fd9d1056-551319d8fa2c4e1f.js  51 kB
+  ├ chunks/main-app-754ab5a1b3c76ec7.js  234 B
+  └ chunks/webpack-199316ac3caadee0.js   1.73 kB
+
+
+
+[info] ○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /_not-found
+[info] 

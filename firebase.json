@@ -1,10 +1,12 @@
 {
   "hosting": {
+    "site": "menendez-law",
     "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "app/_not-found"
     ],
     "frameworksBackend": {
       "region": "us-central1"
