@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Button from "./components/Button";
 import Image from "next/image";
 import BackButton from "./components/BackButton";
+import { MdCheck } from "react-icons/md";
 
 export default function Home() {
   const main = useRef<HTMLImageElement>(null);
@@ -140,19 +141,11 @@ export default function Home() {
                 <hr />
               </div>
 
-              <div className="bg-secondary text-secondary-content m-0 p-6 h-full w-[49%]">
-                <p className="text-xl md:text-2xl mb-[5%]">Hours</p>
-                <hr />
-                <div className="flex flex-row text-sm md:text-lg justify-between my-[5%]">
-                  <p>Monday - Friday</p>
-                  <p>9 am - 5 pm</p>
+              <div className="bg-secondary text-secondary-content m-0 p-6 h-full w-[49%] flex flex-col justify-between text-sm md:text-lg">
+                <div className="flex flex-row">
+                  <MdCheck/>
+                  <p>Language assistance</p>
                 </div>
-                <hr />
-                <div className="flex flex-row text-sm md:text-lg justify-between my-[5%]">
-                  <p>Sunday - Saturday</p>
-                  <p>Closed</p>
-                </div>
-                <hr />
               </div>
 
             </div>
