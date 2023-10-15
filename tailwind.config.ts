@@ -15,18 +15,20 @@ const config: Config = {
       },
       keyframes: {
         inContent: {
-          "0%": { opacity: '0' },
-          "100%": { opacity: '1' }
+          "0%": { opacity: '0'},
+          "75%": { opacity: '0'},
+          "100%": { opacity: '1'}
         },
         outContent: {
-          "0%": { opacity: '1' },
-          "100%": { opacity: '0' }
+          "0%": { opacity: '1'},
+          "25%": { opacity: '0'},
+          "100%": { opacity: '0'}
         }
       }
     },
     animation: {
-      inContent: 'inContent 1s ease',
-      outContent: 'outContent 1s ease',
+      inContent: 'inContent 1.2s ease-in-out',
+      outContent: 'outContent 1.2s ease-in-out',
     },
     colors: {
       transparent: 'transparent',
