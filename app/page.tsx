@@ -103,7 +103,7 @@ export default function Home() {
   
   return (
     <main className="bg-white text-base-100">
-      <div className="flex flex-col items-center justify-start h-auto w-auto m-auto overflow-hidden">
+      <div className="flex flex-col items-center justify-start h-screen w-auto m-auto overflow-hidden">
         
         {/* TITLE */}
         <div className="my-6 md:my-12 text-6xl md:text-7xl">
@@ -123,7 +123,7 @@ export default function Home() {
           <div className={`absolute left-[17%] top-[15%] h-[50%] w-[25%] z-10  ${servicesScreen === 1 && "animate-inContent"} ${servicesScreen !== 1 && "animate-outContent"}`}
             style={{display: servicesDisplay}}
           >
-            <ul className="list-disc text-xl sm:text-2xl md:text-3xl">
+            <ul className="list-disc text-[2vh] md:text-2xl">
               <li className="mb-10">Refugee Claims</li>
               <li className="mb-10">Visitor Visa Extensions</li>
               <li>Humanitarian & Compassionate Ground Applications</li>
@@ -151,14 +151,14 @@ export default function Home() {
             <div className="flex flex-row justify-between h-full w-full">
               
               <div className="bg-secondary text-secondary-content m-0 p-6 h-full w-[49%]">
-                <p className="text-xl md:text-2xl mb-[5%]">Hours</p>
+                <p className="text-[3vh] lg:text-2xl mb-[5%]">Hours</p>
                 <hr />
-                <div className="flex flex-row text-sm md:text-lg justify-between my-[6%]">
+                <div className="flex flex-row text-[2vh] lg:text-lg justify-between my-[6%]">
                   <p>Monday - Friday</p>
                   <p>9 am - 5 pm</p>
                 </div>
                 <hr />
-                <div className="flex flex-row text-sm md:text-lg justify-between my-[6%]">
+                <div className="flex flex-row text-[2vh] lg:text-lg justify-between my-[6%]">
                   <p>Sunday - Saturday</p>
                   <p>Closed</p>
                 </div>
