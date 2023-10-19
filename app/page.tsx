@@ -123,7 +123,7 @@ export default function Home() {
           <div className={`absolute left-[17%] top-[15%] h-[50%] w-[25%] z-10  ${servicesScreen === 1 && "animate-inContent"} ${servicesScreen !== 1 && "animate-outContent"}`}
             style={{display: servicesDisplay}}
           >
-            <ul className="list-disc text-[2vh] md:text-2xl">
+            <ul className="list-disc text-[2vw] md:text-2xl">
               <li className="mb-10">Refugee Claims</li>
               <li className="mb-10">Visitor Visa Extensions</li>
               <li>Humanitarian & Compassionate Ground Applications</li>
