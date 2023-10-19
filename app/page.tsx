@@ -106,7 +106,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-start h-screen w-auto m-auto overflow-hidden">
         
         {/* TITLE */}
-        <div className="my-6 md:my-12 text-6xl md:text-7xl">
+        <div className="my-[2vh] md:my-[3vh] text-[5vh]">
           Menendez Law
         </div>
 
@@ -151,21 +151,21 @@ export default function Home() {
             <div className="flex flex-row justify-between h-full w-full">
               
               <div className="bg-secondary text-secondary-content m-0 p-6 h-full w-[49%]">
-                <p className="text-[3vh] lg:text-2xl mb-[5%]">Hours</p>
+                <p className="text-[3vh] lg:text-xl mb-[5%]">Hours</p>
                 <hr />
-                <div className="flex flex-row text-[2vh] lg:text-lg justify-between my-[6%]">
+                <div className="flex flex-row text-[1.5vh]  justify-between my-[6%]">
                   <p>Monday - Friday</p>
                   <p>9 am - 5 pm</p>
                 </div>
                 <hr />
-                <div className="flex flex-row text-[2vh] lg:text-lg justify-between my-[6%]">
+                <div className="flex flex-row text-[1.5vh] justify-between my-[6%]">
                   <p>Sunday - Saturday</p>
                   <p>Closed</p>
                 </div>
                 <hr />
               </div>
 
-              <div className="bg-secondary text-secondary-content m-0 py-6 h-full w-[49%] flex flex-row justify-start text-sm lg:text-lg">
+              <div className="bg-secondary text-secondary-content m-0 py-6 h-full w-[49%] flex flex-row justify-start text-[1.5vh]">
                 <div className="flex flex-col justify-between ml-[10%]">
                   <MdCheck className="w-[30%] h-[30%]"/>
                   <MdCheck className="w-[30%] h-[30%]"/>
@@ -193,7 +193,7 @@ export default function Home() {
 
         </div>
 
-        <div className="m-6 md:m-8 lg:mt-12 lg:mb-8">
+        <div className="m-[1vh] md:m-[1.5vh] lg:mt-[2vh] lg:mb-[1.5vh]">
           
           {/* MAIN SCREEN */}
           <div className="flex-row justify-between gap-4 mx-8 w-[95vw] lg:w-[70vw]" style={{display: mainScreen ? "flex": "none"}}>

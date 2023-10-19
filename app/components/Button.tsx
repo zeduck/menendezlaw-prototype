@@ -8,7 +8,7 @@ export default function Button({
   onClick?: () => void,
 }) {
   return (
-    <button className="bg-primary text-primary-content py-8 px-2 md:px-8 md:py-8 m-auto text-xl md:text-2xl flex-1 whitespace-nowrap animate-inContent" onClick={onClick}>
+    <button className="bg-primary text-primary-content py-5 px-2 md:px-5 md:py-5 m-auto text-xl lg:text-2xl flex-1 whitespace-nowrap animate-inContent" onClick={onClick}>
       { children }
     </button>
   );
