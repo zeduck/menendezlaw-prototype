@@ -5,4 +5,4 @@ https://menendezlaw-prototype.vercel.app/
 #
 
 The official website: 
-https://github.com/zeduck/menendezlaw2
+https://github.com/zeduck/menendezlaw
